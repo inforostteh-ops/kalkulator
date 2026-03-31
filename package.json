@@ -1,0 +1,1 @@
+{\n  "name": "kalkulator",\n  "version": "1.0.0",\n  "private": true,\n  "dependencies": {\n    "react": "^17.0.0",\n    "next": "^12.0.0",\n    "typescript": "^4.0.0",\n    "xlsx": "^0.17.0",\n    "dxf-parser": "^1.5.0"\n  }\n}
