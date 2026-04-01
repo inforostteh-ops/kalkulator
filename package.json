@@ -1,1 +1,21 @@
-{\n  "name": "kalkulator",\n  "version": "1.0.0",\n  "private": true,\n  "dependencies": {\n    "react": "^17.0.0",\n    "next": "^12.0.0",\n    "typescript": "^4.0.0",\n    "xlsx": "^0.17.0",\n    "dxf-parser": "^1.5.0"\n  }\n}
+{
+  "name": "kalkulator",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.0",
+    "xlsx": "^0.18.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/node": "^20.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "vite",
+    "preview": "vite preview"
+  }
+}

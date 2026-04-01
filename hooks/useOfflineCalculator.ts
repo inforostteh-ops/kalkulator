@@ -1,7 +1,7 @@
 // hooks/useOfflineCalculator.ts
 import { useState, useEffect } from 'react';
 import { calculateM2, calculateM3, calculateM } from '../utils/calculations';
-import { validateDimensions, validateMaterials } from '../utils/validation';
+import { validateDimensions } from '../utils/validation';
 import { validateUserInput, validateResults, suggestMaterials } from '../services/aiValidator';
 
 interface CalculationData {

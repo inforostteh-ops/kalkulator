@@ -1,0 +1,41 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer {
+  background: #1f2937;
+  color: #d1d5db;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem;
+  }
+
+  .footer {
+    padding: 1.5rem 1rem;
+    font-size: 0.75rem;
+  }
+}

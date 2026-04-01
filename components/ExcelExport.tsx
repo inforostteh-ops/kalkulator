@@ -1,6 +1,6 @@
 import * as XLSX from 'xlsx';
 
-const ExcelExport = ({ data }) => {
+const ExcelExport = ({ data }: { data: unknown[] }) => {
     const handleExport = () => {
         const worksheet = XLSX.utils.json_to_sheet(data);
         const workbook = XLSX.utils.book_new();

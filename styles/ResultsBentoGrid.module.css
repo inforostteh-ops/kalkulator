@@ -1,0 +1,111 @@
+.bentoGrid {
+  margin: 2rem 0;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cardArea {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+  border-left: 4px solid #0284c7;
+}
+
+.cardVolume {
+  background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%);
+  border-left: 4px solid #7c3aed;
+}
+
+.cardLinear {
+  background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+  border-left: 4px solid #16a34a;
+}
+
+.cardCost {
+  background: linear-gradient(135deg, #fed7aa 0%, #fdba74 100%);
+  border-left: 4px solid #ea580c;
+}
+
+.cardCount {
+  background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+  border-left: 4px solid #a855f7;
+}
+
+.cardContent {
+  text-align: center;
+}
+
+.label {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.value {
+  margin: 0.75rem 0 0 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.unit {
+  font-size: 0.875rem;
+  opacity: 0.75;
+  margin-left: 0.25rem;
+}
+
+.emptyState {
+  background: white;
+  border: 2px dashed #e5e7eb;
+  border-radius: 8px;
+  padding: 3rem;
+  text-align: center;
+  color: #9ca3af;
+}
+
+.emptyState p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  .value {
+    font-size: 1.25rem;
+  }
+}
